@@ -8,9 +8,9 @@ const groups=[
   {name:"Extract PDF pages",desc:"Save selected pages as a new PDF.",href:"/extract-pages",tag:"Organize",icon:"⇧"},
   {name:"Rotate PDF",desc:"Turn pages 90°, 180° or 270°.",href:"/rotate-pdf",tag:"Edit",icon:"↻"},
   {name:"Add page numbers",desc:"Number pages automatically.",href:"/page-numbers",tag:"Edit",icon:"№"},
-  {name:"Add watermark",desc:"Stamp text across your PDF pages.",href:"/watermark-pdf",tag:"Edit",icon:"◈"},
+  {name:"Add watermark",desc:"Stamp text across your PDF pages.",href:"/watermark-pdf",tag:"Edit",icon:"◈"},\n  {name:"Crop PDF",desc:"Trim the visible area on every page.",href:"/crop-pdf",tag:"Edit",icon:"⌗"},
   {name:"Compress PDF",desc:"Reduce PDF size in your browser.",href:"/compress-pdf",tag:"Compress",icon:"▥"},
-  {name:"PDF to JPG",desc:"Turn every PDF page into an image.",href:"/pdf-to-jpg",tag:"Convert",icon:"▧"},
+  {name:"PDF to JPG",desc:"Turn every PDF page into an image.",href:"/pdf-to-jpg",tag:"Convert",icon:"▧"},\n  {name:"PDF to Text",desc:"Extract selectable text from a PDF.",href:"/pdf-to-text",tag:"Convert",icon:"T"},\n  {name:"PDF to Markdown",desc:"Export PDF text as Markdown pages.",href:"/pdf-to-markdown",tag:"Convert",icon:"M"},
  ]},
  {title:"Converters",description:"Turn your images and documents into the format you need.",tools:[
   {name:"JPG to PDF",desc:"Make a PDF from photos and scans.",href:"/jpg-to-pdf",tag:"Convert",icon:"▧"},
