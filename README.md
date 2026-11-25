@@ -1,14 +1,23 @@
 # Zapsquish
 
-Squish, merge and convert your files. Fast, free, private.
+A mobile-friendly browser toolbox for PDF, image and video tasks. Files are processed locally where the selected tool supports it.
 
-## Included tools
-- Merge PDF, reorder files and download one merged PDF
-- JPG/PNG to PDF with page size, orientation and margin options
-- Compress images to JPEG with quality, resize, and ZIP download
-- Compress PDF in-browser (image-based output; selectable text is not retained)
-- Compress video in-browser with FFmpeg WebAssembly
-- PDF to JPG, split PDF, rotate PDF, and images to WebP
+## Available tools
+
+### PDF organization and editing
+- Merge PDF, split PDF, organize/reorder pages
+- Remove pages and extract selected pages
+- Rotate PDF, crop page boxes, add page numbers and text watermarks
+- Compress PDF (image-based; text will no longer be selectable)
+
+### PDF conversion
+- JPG/PNG to PDF, PDF to JPG
+- PDF to selectable text and Markdown
+
+### Image and video
+- Compress JPG, PNG and WebP images
+- Convert images to WebP
+- Compress video to MP4 with WhatsApp-friendly, smaller and best-quality presets
 
 ## Stack
 Next.js App Router, TypeScript, Tailwind CSS, pdf-lib, pdfjs-dist, browser-image-compression, JSZip and FFmpeg WebAssembly.
@@ -18,11 +27,11 @@ Next.js App Router, TypeScript, Tailwind CSS, pdf-lib, pdfjs-dist, browser-image
 2. Run `npm install`.
 3. Run `npm run dev` and open the local URL.
 
-## Privacy
-File processing runs in the browser. No file upload API, database or login system is included. The FFmpeg core is fetched from a public CDN only when video compression starts; the selected video is not uploaded.
+## Privacy and limitations
+Supported tools process files in the browser. The FFmpeg engine is fetched from a public CDN when video compression starts, but the video itself is not uploaded. PDF text extraction does not OCR scanned pages. PDF compression rasterizes pages and does not preserve selectable text. Password-protected PDF handling, Office conversions, OCR, electronic signatures, redaction, repair, PDF/A conversion and full visual PDF editing are not implemented yet; do not treat those items as available tools.
 
 ## Deployment
-Import this repository into Vercel and use the default Next.js build settings. Update the canonical URL in `src/app/layout.tsx`, `src/app/sitemap.ts`, and `src/app/robots.ts` after choosing the production domain.
+Import this repository into Vercel with the Next.js preset. Update the canonical URL in `src/app/layout.tsx`, `src/app/sitemap.ts`, and `src/app/robots.ts` after choosing the production domain.
 
-## Phase 4 is intentionally deferred
-Paid server-side processing, user accounts and payment integration are not enabled. They require real usage evidence, an approved server budget, payment-provider credentials, privacy/legal review and an explicit product decision. No paid service has been added.
+## Phase 4
+Paid server-side processing, accounts and payment integration are intentionally deferred until real usage justifies them and you approve the costs. No paid service has been added.
