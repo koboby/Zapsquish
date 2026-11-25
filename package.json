@@ -15,7 +15,9 @@
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^5.4.394",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.16",
